@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Labs | Welcome | Trail</title>
+    <link rel="stylesheet" href="../app/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Software Labs | Trail
+        </h1>
+    </header>
+    <section class="createEmp">
+        <h1>Create Employee</h1>
+        <form action="#">
+            <div class="inputs">
+                <input type="text" class="form-labels valid" required id="emp-name">
+                <label for="emp-name">Employee Name</label>
+            </div>
+            <div class="inputs">
+                <input type="text" class="form-labels" required id="emp-email">
+                <label for="emp-email">Employee Email ID</label>
+            </div>
+            <div class="inputs">
+                <select id="Designation" class="form-labels">
+                    <option value="Senior Developer">Senior Developer</option>
+                    <option value="Junior Developer">Junior Developer</option>
+                    <option value="Tester">Tester</option>
+                </select>
+            </div>
+            <div class="inputs">
+                <span>Hire Date</span>
+                <input type="date" class="form-labels" required id="emp-hire-date">
+            </div>
+            <div class="inputs">
+                <input type="text" class="form-labels" required id="emp-salary">
+                <label for="emp-salary">Salary in INR</label>
+            </div>
+            <div class="footer">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </section>
+    <section class="viewEmp">
+        <table border="1">
+            <thead>
+                <h1>Employee Directory</h1>
+            </thead>
+            <tbody>
+                <th>
+                    Employee ID
+                </th>
+                <th>
+                    Employee Name
+                </th>
+                <th>
+                    Employee Email
+                </th>
+                <th>
+                    Designation
+                </th>
+                <th>
+                    Hire Date
+                </th>
+                <th>
+                    Salary
+                </th>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Sravan Kumar
+                    </td>
+                    <td>
+                        shravanyoserene1729@gmail.com
+                    </td>
+                    <td>
+                        Junior Dev
+                    </td>
+                    <td>
+                        21-05-2020
+                    </td>
+                    <td>
+                        30,000
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <script src="../app/js/jquery.min.js"></script>
+    <script src="../app/js/main.js"></script>
+</body>
+</html>
