@@ -46,6 +46,8 @@ body {
         border: 2px solid white; }
       body .createEmp form .inputs .form-labels:focus + label, body .createEmp form .inputs input:valid + label {
         transform: translateY(-10px); }
+      body .createEmp form .inputs .form-select {
+        width: 75%; }
     body .createEmp form .footer {
       display: flex;
       justify-content: center; }
