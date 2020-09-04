@@ -108,6 +108,11 @@ body
         {
             margin:2%;
         }
+        #empDir
+        {
+            width:90%;
+            border:1px solid black;
+        }
     }
 }
 
@@ -118,5 +123,9 @@ body
         grid-template-areas: "header header"
                             "create create"
                             "view view";  
+    }
+    #empDir
+    {
+        width:50%;
     }
 }

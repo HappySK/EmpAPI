@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    $('#empDir').dataTable();
     $('form').submit(() => {
         var name = $('#emp-name').val()
         var email = $('#emp-email').val()
@@ -13,6 +14,15 @@ $(document).ready(() => {
             date:date,
             salary:salary
         }
-        console.log(JSON.stringify(emp))
+        $.ajax({
+            url:'../app/empDir.php',
+            type:'POST',
+            dataType:'html',
+            data:{emp:JSON.stringify(emp)},
+            success:function(data)
+            {
+                alert(data)
+            }
+        })
     })
 })

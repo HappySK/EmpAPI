@@ -70,9 +70,15 @@ body {
     align-items: center; }
     body .viewEmp h1 {
       margin: 2%; }
+    body .viewEmp #empDir {
+      width: 90%;
+      border: 1px solid black; }
 
 @media screen and (max-width: 450px) {
   body {
-    grid-template-areas: "header header" "create create" "view view"; } }
+    grid-template-areas: "header header" "create create" "view view"; }
+
+  #empDir {
+    width: 50%; } }
 
 /*# sourceMappingURL=style.css.map */
