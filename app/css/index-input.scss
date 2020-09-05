@@ -13,7 +13,6 @@
 
 body
 {
-    background: powderblue;
     display: grid;
     grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 0.2fr 2fr;
@@ -27,13 +26,13 @@ body
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: red;
         width:100%;
+        border-bottom: 2px solid black;
     }
     .createEmp
     {
         grid-area: create;
-        background-color: pink;
+        border-right: 2px solid black;
         h1
         {
             text-align:center;
@@ -104,10 +103,10 @@ body
     .viewEmp
     {
         grid-area: view;
-        background-color: yellow;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin:4%;
         h1
         {
             margin:2%;
