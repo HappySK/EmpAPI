@@ -21,7 +21,7 @@
                 <label for="emp-name">Employee Name</label>
             </div>
             <div class="inputs">
-                <input type="text" class="form-labels" required id="emp-email">
+                <input type="email" class="form-labels" required id="emp-email">
                 <label for="emp-email">Employee Email ID</label>
             </div>
             <div class="inputs">
@@ -43,54 +43,37 @@
                 <input type="submit">
                 <input type="reset">
             </div>
+            <div id="feedback" />
         </form>
     </section>
     <section class="viewEmp">
         <table border="2" id="empDir">
             <thead>
-                <h1>Employee Directory</h1>
+                <tr>
+                    <th>
+                        Employee ID
+                    </th>
+                    <th>
+                        Employee Name
+                    </th>
+                    <th>
+                        Employee Email
+                    </th>
+                    <th>
+                        Designation
+                    </th>
+                    <th>
+                        Hire Date
+                    </th>
+                    <th>
+                        Salary
+                    </th>
+                </tr>
             </thead>
             <tbody>
-                <th>
-                    Employee ID
-                </th>
-                <th>
-                    Employee Name
-                </th>
-                <th>
-                    Employee Email
-                </th>
-                <th>
-                    Designation
-                </th>
-                <th>
-                    Hire Date
-                </th>
-                <th>
-                    Salary
-                </th>
-                <tr>
-                    <td>
-                        1
-                    </td>
-                    <td>
-                        Sravan Kumar
-                    </td>
-                    <td>
-                        shravanyoserene1729@gmail.com
-                    </td>
-                    <td>
-                        Junior Dev
-                    </td>
-                    <td>
-                        21-05-2020
-                    </td>
-                    <td>
-                        30,000
-                    </td>
-                </tr>
             </tbody>
         </table>
+        <input type="button">
     </section>
     <script src="../app/js/jquery.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>

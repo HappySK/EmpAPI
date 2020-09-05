@@ -95,6 +95,10 @@ body
                     font-weight: bolder;
                 }
             }
+            #feedback
+            {
+                text-align: center;
+            }
         }
     }
     .viewEmp
@@ -107,11 +111,6 @@ body
         h1
         {
             margin:2%;
-        }
-        #empDir
-        {
-            width:90%;
-            border:1px solid black;
         }
     }
 }

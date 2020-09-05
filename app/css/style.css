@@ -62,6 +62,8 @@ body {
         outline: none; }
       body .createEmp form .footer input:hover {
         font-weight: bolder; }
+    body .createEmp form #feedback {
+      text-align: center; }
   body .viewEmp {
     grid-area: view;
     background-color: yellow;
@@ -70,9 +72,6 @@ body {
     align-items: center; }
     body .viewEmp h1 {
       margin: 2%; }
-    body .viewEmp #empDir {
-      width: 90%;
-      border: 1px solid black; }
 
 @media screen and (max-width: 450px) {
   body {
