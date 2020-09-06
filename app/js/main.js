@@ -15,11 +15,10 @@ $(document).ready(() => {
             salary:salary
         }
         $.ajax({
-            url:'../app/empDir.php',
+            url:'../app/data.php',
             type:'POST',
             dataType:'html',
-            data:{emp:JSON.stringify(emp)},
-
+            data:{emp:JSON.stringify(emp),action:'post'},
             success:function(data)
             {
                 $('#feedback').text(data)
@@ -30,7 +29,7 @@ $(document).ready(() => {
     function load_data()
     {
         $.ajax({
-            url:'../app/empDir.php',
+            url:'../app/data.php',
             type:'GET',
             data:{action:'getEmpDetails'},
             dataType:'JSON',
@@ -53,7 +52,8 @@ $(document).ready(() => {
                     document.getElementsByTagName('tbody')[0].appendChild(row)
                 })
                 $('#empDir').dataTable({
-                    pageLength: 5
+                    pageLength: 5,
+                    bDestroy:'true'
                 });
             }
         })

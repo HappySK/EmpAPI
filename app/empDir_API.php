@@ -81,6 +81,13 @@
 
     if(isset($_GET['action']) && !empty($_GET['action']))
     {
-        echo $emp->getEmployeeDetails();
+        if($_GET['action']=='getEmpDetails')
+        {
+            echo $emp->getEmployeeDetails();
+        }
+        else
+        {
+            echo "Invalid Request";
+        }
     }
 ?>
